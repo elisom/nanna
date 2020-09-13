@@ -39,7 +39,7 @@ class Register extends Component {
 						<RNPickerSelect
 							placeholder={{}}
 							onValueChange={(value) => console.log(value)}
-							items={[{ label: 'Football', value: 'football' }]}
+							items={[{ label: '972', value: 'country_code' }]}
 						/>
 					</View>
 					<View style={styles.footer}>
@@ -49,7 +49,7 @@ class Register extends Component {
 							color="#38D6CA"
 							bwidth={350}
 							bheight={40}
-							text="טלפון"></Button>
+							text="הבא"></Button>
 					</View>
 				</View>
 			</KeyboardAvoidingView>	

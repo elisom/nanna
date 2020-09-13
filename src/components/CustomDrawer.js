@@ -31,7 +31,10 @@ function CustomDrawer(props) {
 				<DrawerItem label="אם בשלב" labelStyle={styles.drawerLabelStyle} style={{ alignItems: 'flex-end' }} onPress={() => {
 					props.navigation.closeDrawer()
 					props.navigation.navigate('ChatList')}}/>
-				<DrawerItem label="הקלדת" labelStyle={styles.drawerLabelStyle} style={{ alignItems: 'flex-end' }} onPress={() => {}}/>
+				<DrawerItem label="הקלדת" labelStyle={styles.drawerLabelStyle} style={{ alignItems: 'flex-end' }} onPress={() => {
+					props.navigation.closeDrawer();
+					props.navigation.navigate('Register');
+				}}/>
 			</DrawerContentScrollView>
 			<Text style={styles.bottomText}>Lorem Ipsum</Text>
 		</View>
