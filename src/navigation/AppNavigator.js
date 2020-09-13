@@ -9,19 +9,21 @@ import ProfileDetail from '../screens/ProfileDetail'
 import Chat from '../screens/Chat'
 import RecentChat from '../screens/RecentChat'
 import ChatList from '../screens/ChatList'
+import Register from '../screens/Register'
 
 const Stack = createStackNavigator()
 
 const AppNavigator = () => {
 	return (
-		<Stack.Navigator screenOptions={{ headerShown: false }}>
-			<Stack.Screen name="Home" component={DrawerNavigator} />
+		<Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
+			<Stack.Screen name="Home" component={DrawerNavigator}/>
 			<Stack.Screen name="RecentChat" component={RecentChat} />
 			<Stack.Screen name="Chat" component={Chat} />
 			<Stack.Screen name="ProfileDetail" component={ProfileDetail} />
 			<Stack.Screen name="Schedule" component={Schedule} />
 			<Stack.Screen name="SliderScreen" component={SliderScreen} />
 			<Stack.Screen name="Profile" component={Profile} />
+			<Stack.Screen name="Register" component={Register} />
 
 			<Stack.Screen name="Profilesetup" component={Profilesetup} />
 			<Stack.Screen name="ChatList" component={ChatList} />
