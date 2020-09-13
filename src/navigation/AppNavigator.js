@@ -10,6 +10,7 @@ import Chat from '../screens/Chat'
 import RecentChat from '../screens/RecentChat'
 import ChatList from '../screens/ChatList'
 import Register from '../screens/Register'
+import Welcome from '../screens/Welcome'
 
 const Stack = createStackNavigator()
 
@@ -24,6 +25,7 @@ const AppNavigator = () => {
 			<Stack.Screen name="SliderScreen" component={SliderScreen} />
 			<Stack.Screen name="Profile" component={Profile} />
 			<Stack.Screen name="Register" component={Register} />
+			<Stack.Screen name="Welcome" component={Welcome} />
 
 			<Stack.Screen name="Profilesetup" component={Profilesetup} />
 			<Stack.Screen name="ChatList" component={ChatList} />

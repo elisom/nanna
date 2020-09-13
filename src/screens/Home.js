@@ -11,7 +11,7 @@ class Home extends Component {
 	  
 	  this.state = {
 		showTrainer: false,
-		initialQuestion: false,
+		initialQuestion: true,
 		nextQuestion: false,
 		showTrainerProfile: false,
 		buttonDisplay: true

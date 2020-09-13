@@ -20,7 +20,7 @@ class Register extends Component {
 		password: '',
 	  };
 	}
-	login = () => {
+	register = () => {
 		this.props.navigation.navigate('Profilesetup')
 	}
 	render() {
@@ -44,7 +44,7 @@ class Register extends Component {
 					</View>
 					<View style={styles.footer}>
 						<Button
-							onPress={this.login}
+							onPress={this.register}
 							fontcolor="#000"
 							color="#38D6CA"
 							bwidth={350}

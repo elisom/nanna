@@ -227,7 +227,7 @@ class Profilesetup extends Component {
 									this.setState({
 										showDialogue : true
 									})
-									// navigation.navigate('SliderScreen')
+									navigation.navigate('SliderScreen')
 								}}>
 								<View
 									style={[
